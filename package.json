@@ -1,18 +1,21 @@
 {
-  "name": "my-vue-app",
+  "name": "mock-swensens",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.15"
+    "vue": "^3.4.15",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.3",
+    "sass": "^1.71.1",
+    "sass-loader": "^14.1.1",
     "vite": "^5.1.0"
   }
 }

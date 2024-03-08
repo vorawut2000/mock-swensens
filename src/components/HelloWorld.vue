@@ -1,11 +1,11 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
 defineProps({
   msg: String,
-})
+});
 
-const count = ref(0)
+const count = ref(0);
 </script>
 
 <template>
@@ -19,6 +19,17 @@ const count = ref(0)
     </p>
   </div>
 
+  <img
+    src="https://swensens1112.com/images/icon-location.svg"
+    alt=""
+    class="icon"
+    style="height: 24px; width: auto; margin-right: 8px"
+  />
+  <img
+    data-v-cd91a40a=""
+    src="https://swensens1112.com/images/app-screen-webp.webp"
+    alt=""
+  />
   <p>
     Check out
     <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
