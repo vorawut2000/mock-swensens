@@ -1,2 +1,2 @@
 # mock-swensens
-CODEDIVA Assignment Test - Web Application Developer
+By Vue.js + Pinia
