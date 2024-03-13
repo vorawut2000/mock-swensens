@@ -9,7 +9,6 @@
 </template>
 
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
 import Footer from "./components/footer/footer.vue";
 import NavTop from "./components/navbar/nav-top.vue";
 </script>
@@ -18,6 +17,7 @@ import NavTop from "./components/navbar/nav-top.vue";
 .app-container {
   width: 100%;
   margin: 0 auto;
+  background-color: #f4f4f4;
 }
 
 @media screen and (max-width: 280px) {

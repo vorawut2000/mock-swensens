@@ -81,7 +81,8 @@
     </div>
   </div>
 </template>
-<script setup></script>
+<script setup>
+</script>
 <style lang="scss" scoped>
 .banner {
   color: #fff;
@@ -102,14 +103,19 @@
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
+
   }
 }
 
 .column-content {
   flex: 1;
   padding: 0 50px;
+
   @media (max-width: 768px) {
     padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .heading {
     color: inherit;
@@ -129,7 +135,6 @@
     font-size: 20px;
   }
   .button-container {
-    // position: relative;
     display: block;
     width: 50%;
     margin-top: 40px;

@@ -91,6 +91,7 @@ window.addEventListener("resize", () => {
 </script>
 <style scoped lang="scss">
 .footer-container {
+
   background-color: #e21c23;
   padding: 24px;
   display: flex;

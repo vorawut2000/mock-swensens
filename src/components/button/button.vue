@@ -1,7 +1,13 @@
 <template>
   <button
     class="button ellipsis"
-    :class="[disabled && 'disabled', inactive && 'inactive', image && 'image']"
+    :class="[
+      disabled && 'disabled',
+      inactive && 'inactive',
+      image && 'image',
+      plain && 'plain',
+      plainBG && 'plain bg',
+    ]"
   >
     <slot></slot>
   </button>
@@ -15,6 +21,14 @@ export default {
       default: false,
     },
     inactive: {
+      type: Boolean,
+      default: false,
+    },
+    plain: {
+      type: Boolean,
+      default: false,
+    },
+    plainBG: {
       type: Boolean,
       default: false,
     },
@@ -64,6 +78,22 @@ export default {
   &.inactive {
     background-color: #9a9a9a;
     color: #fff;
+  }
+  &.plain {
+    font-size: 14px;
+    border-radius: 50px;
+    color: #e21c23;
+    background-color: #fff;
+    border: 1px solid #e21c23;
+    font-weight: 300;
+    background-image: none;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+    padding: 0 25px;
+    height: 48px;
+    &.bg {
+      background-color: #e21c23;
+      color: #fff;
+    }
   }
 }
 </style>
